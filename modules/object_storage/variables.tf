@@ -8,6 +8,12 @@ variable "storage_location" {
   description = "The location of the storage bucket for the Vault license."
 }
 
+variable "vault_license" {
+  type        = string
+  description = "The Vault license"
+  default     = ""
+}
+
 variable "vault_license_filepath" {
   type        = string
   description = "Filepath to location of Vault license file"

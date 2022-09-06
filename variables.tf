@@ -94,6 +94,12 @@ variable "vault_lb_health_check" {
   default     = "/v1/sys/health?activecode=200&standbycode=200&sealedcode=200&uninitcode=200"
 }
 
+variable "vault_license" {
+  type        = string
+  description = "The Vault license"
+  default     = ""
+}
+
 variable "vault_license_name" {
   type        = string
   description = "The file name for the Vault license file"
@@ -103,6 +109,7 @@ variable "vault_license_name" {
 variable "vault_license_filepath" {
   type        = string
   description = "Filepath to location of Vault license file"
+  default     = "/Users/user/vault.hclic"
 }
 
 variable "vault_version" {

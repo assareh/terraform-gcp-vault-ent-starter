@@ -43,6 +43,7 @@ module "object_storage" {
 
   resource_name_prefix   = var.resource_name_prefix
   storage_location       = var.storage_location
+  vault_license          = var.vault_license
   vault_license_filepath = var.vault_license_filepath
   vault_license_name     = var.vault_license_name
 }

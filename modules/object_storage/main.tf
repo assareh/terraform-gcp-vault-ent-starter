@@ -9,7 +9,7 @@ resource "google_storage_bucket" "vault_license_bucket" {
 }
 
 resource "google_storage_bucket_object" "vault_license" {
-  name   = var.vault_license_name
-  source = var.vault_license_filepath
-  bucket = google_storage_bucket.vault_license_bucket.name
+  name    = var.vault_license_name
+  content = var.vault_license
+  bucket  = google_storage_bucket.vault_license_bucket.name
 }
