@@ -9,7 +9,7 @@ output "network" {
 }
 
 output "network_name" {
-  value       = module.vpc.network
+  value       = module.vpc.network_name
   description = "Name of network being created"
 }
 
