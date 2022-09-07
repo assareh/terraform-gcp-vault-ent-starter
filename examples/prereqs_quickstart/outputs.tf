@@ -3,6 +3,11 @@ output "leader_tls_servername" {
   description = "Shared SAN that will be given to the Vault nodes configuration for use as leader_tls_servername"
 }
 
+output "network" {
+  value       = module.vpc.network_self_link
+  description = "The self-link of network being created"
+}
+
 output "ssl_certificate_name" {
   value       = module.secrets.ssl_certificate_name
   description = "Name of the ssl certificate resource"
