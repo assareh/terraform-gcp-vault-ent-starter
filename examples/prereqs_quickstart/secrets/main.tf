@@ -51,6 +51,8 @@ resource "tls_cert_request" "server" {
 
   ip_addresses = [
     "127.0.0.1",
+    "10.10.10.2",
+    "10.10.20.7"
   ]
 }
 
