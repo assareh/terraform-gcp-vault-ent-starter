@@ -8,6 +8,11 @@ output "network" {
   description = "The self-link of network being created"
 }
 
+output "network_name" {
+  value       = module.vpc.network
+  description = "Name of network being created"
+}
+
 output "ssl_certificate_name" {
   value       = module.secrets.ssl_certificate_name
   description = "Name of the ssl certificate resource"
